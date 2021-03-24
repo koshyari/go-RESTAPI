@@ -17,10 +17,10 @@ func initializeRouter() {
 	r.HandleFunc("/api/users/{id}", UpdateUser).Methods("PUT")
 	r.HandleFunc("/api/users/{id}", DeleteUser).Methods("DELETE")
 
-	log.Fatal(http.ListenAndServe(":9000", r))
+	log.Fatal(http.ListenAndServe(":3000", r))
 }
 
 func main() {
-
+	initialMigration()
 	initializeRouter()
 }
