@@ -15,7 +15,8 @@ type User struct {
 	Email      string `json:"email"`
 }
 
-const DSN = "root:password@tcp(127.0.0.1:3306)/godb?charset=utf8mb4&parseTime=True&loc=Local"
+//Add your MySQL DSN here
+const DSN = "<username>:<password>@tcp(127.0.0.1:3306)/<schema_name>?charset=utf8mb4&parseTime=True&loc=Local"
 
 //Connect to MySQL Database using gorm
 func initialMigration() {
