@@ -20,6 +20,13 @@ go build
 ./go-RESTAPI
 ```
 
+## Database
+
+> In the db.go file, add your MySQL details 
+``` bash
+const DSN = "<username>:<password>@tcp(127.0.0.1:3306)/<schema_name>?charset=utf8mb4&parseTime=True&loc=Local"
+```
+
 ## Endpoints
 
 ### Get All Users
